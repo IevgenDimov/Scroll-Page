@@ -26,16 +26,23 @@ navToggle.addEventListener('click', function(){
     // The Element.getBoundingClientRect() method returns a DOMRect object providing
     //     information about the size of an element and its position relative to the viewport.    
    
-    const containerHeight = linksContainer.getBoundingClientRect()
+    const containerHeight = linksContainer.getBoundingClientRect().height;
+
     const linksHeight = links.getBoundingClientRect().height;
 
-    console.log(linksHeight);
 
-    
+    if (containerHeight === 0) {
+        linksContainer.style.height = `${linksHeight}px`;
+      } else {
+        linksContainer.style.height = 0;
+      }
+
    
     // linksContainer.classList.toggle('show-links')
 })
 // ********** fixed navbar ************
+
+
 
 // ********** smooth scroll ************
 // select links
