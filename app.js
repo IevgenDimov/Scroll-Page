@@ -41,7 +41,22 @@ navToggle.addEventListener('click', function(){
     // linksContainer.classList.toggle('show-links')
 })
 // ********** fixed navbar ************
+ const navbar = document.getElementById('nav')
+ const topLink = document.querySelector('.top-link')
+ 
+ 
 
+window.addEventListener('scroll', function (){
+  // checks the y coordinates of the window (the y-coordinate at the bottom of the window)
+ const scrollHeight = window.pageYOffset;
+//  getting the height of a navbar
+ const navHeight = navbar.getBoundingClientRect().height
+  if (scrollHeight > navHeight) {
+    navbar.classList.add('fixed-nav');
+  } else {
+    navbar.classList.remove('fixed-nav');
+  }
+})
 
 
 // ********** smooth scroll ************
