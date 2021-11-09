@@ -42,7 +42,7 @@ Variables
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
-  --clr-secondary: hsla(182, 63%, 54%);
+  --clr-secondary: rgb(0, 93, 243);
   --clr-black: #222;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
@@ -301,7 +301,7 @@ nav {
 header {
   min-height: 100vh;
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(./hero-bcg.jpeg) center/cover no-repeat;
+    url(./semi-truck3.jpg) center/cover no-repeat;
 }
 .banner {
   min-height: 100vh;
@@ -385,3 +385,7 @@ footer p {
     transform: scale(1);
   }
 }
+
+
+
+
